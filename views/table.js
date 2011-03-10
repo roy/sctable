@@ -7,6 +7,7 @@
 /*globals SCTable*/
 
 sc_require('views/table_row');
+sc_require('views/table_row2');
 sc_require('views/table_header');
 sc_require('mixins/table_columns_delegate');
 
@@ -165,7 +166,8 @@ SCTable.TableView = SC.View.extend(SCTable.TableColumnsDelegate, SCTable.TableDe
         contentBinding: SC.Binding.from('content', this),
         selectionBinding: SC.Binding.from('selection', this),
         contentValueKey: 'name',
-        exampleView: SCTable.TableRowView,
+        //exampleView: SCTable.TableRowView,
+        exampleView: SCTable.TableRowView2,
         rowHeight: this.get('rowHeight'),
         tableDelegateBinding: SC.Binding.from('tableDelegate', this).oneWay(),
         showAlternatingRowsBinding: SC.Binding.from('showAlternatingRows', this).oneWay(),
