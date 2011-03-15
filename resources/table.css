@@ -19,6 +19,11 @@
   background-color: #e7e7e7;
 }
 
+.sctable-header-view {
+  background: static_url("images/column_bg.png") repeat-x scroll 0 0 transparent;
+  border-top: 1px solid #CBCBCB;
+  border-bottom: 1px solid #CBCBCB;
+}
 .sctable-header-view div {
   position: absolute;
   overflow: hidden;
@@ -28,7 +33,6 @@
 /* Column Headers */
 
 .sctable-column-header-view {
-  background-color: #e7e7e7;
 }
 
 .sctable-column-header-view .col-border {
@@ -36,8 +40,7 @@
   left: 0px;
   bottom: 0px;
   right: 0px;
-  border-left: 1px solid #f7f7f7;
-  border-right: 1px solid #d6d6d6;
+  border-right: 1px solid #CBCBCB !important;
 }
 
 .sctable-column-header-view .col-name {
@@ -76,14 +79,16 @@
   background-position: -64px -16px;
 }
 
+/*
 .sctable-column-header-view.hover {
-  background-color: #efefef;
+  background: static_url("images/column_selected_bg.png") repeat-x scroll 0 0 transparent;
 }
+  */
 
 .sctable-column-header-view.sel {
-  background-color: #ffffff !important;
+  background: static_url("images/column_selected_bg.png") repeat-x scroll 0 0 transparent !important;
+  color: black !important;
 }
-
 
 /* Table Rows */
 
